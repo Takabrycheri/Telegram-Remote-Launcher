@@ -24,19 +24,19 @@ def shutdown():
     quit()
 
 def stop(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Bot spento!")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Bot turned off!")
     threading.Thread(target=shutdown).start()
 
 def notepad(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Sto avviando Notepad sul pc...")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Launching Notepad on PC...")
     try:
         os.startfile(path_notepad)
-        context.bot.send_message(chat_id=update.effective_chat.id, text="Notepad avviato :)")
+        context.bot.send_message(chat_id=update.effective_chat.id, text="Notepad launched :)")
     except Exception:
-        context.bot.send_message(chat_id=update.effective_chat.id, text="Avvio di Notepad fallito :(")
+        context.bot.send_message(chat_id=update.effective_chat.id, text="Notepad failed to launch :(")
 
 def unknown(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Comando sconosciuto :(")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Unkown command :(")
 
 start_handler = CommandHandler('start', start)
 stop_handler = CommandHandler('stop', stop)
