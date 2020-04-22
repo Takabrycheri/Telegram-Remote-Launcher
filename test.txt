@@ -1,0 +1,3 @@
+This file is used as an example in settings.py and as a test of the bot's default commands.
+Using the command "/open test" you will be able to open me :)
+Consult the readme and wiki for more information and configuration
