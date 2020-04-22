@@ -16,7 +16,7 @@ dispatcher = updater.dispatcher
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 def start(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Funziono :D")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Hello there :D")
 
 def shutdown():
     updater.stop()
