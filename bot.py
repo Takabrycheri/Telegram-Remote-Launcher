@@ -1,31 +1,18 @@
+import threading
+import logging
+import os
+import settings
+
 try:
     import telegram
     from telegram.ext import Updater
     from telegram.ext import CommandHandler
     from telegram.ext import MessageHandler, Filters
-    import threading
-    import logging
-    import os
-    import settings
 except ImportError:
-    print("The Telegram bot module is not installed, give me a few seconds...")
-    print("--------------------------------------")
-    
-    import pip
-    
-    pip.main(["install", "python-telegram-bot"])
-    
-    print("--------------------------------------")
-    print("Module installed, bot starting...")
-
-    import telegram
-    from telegram.ext import Updater
-    from telegram.ext import CommandHandler
-    from telegram.ext import MessageHandler, Filters
-    import threading
-    import logging
-    import os
-    import settings
+    print("Dependencies have not been installed...")
+    print("Restart me when the other cmd disappears")
+    os.startfile("requirements.bat")
+    quit()
 
 if settings.token == '':
     print("--------------------------------------")
