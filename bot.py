@@ -14,6 +14,24 @@ except ImportError:
     os.startfile("requirements.bat")
     quit()
 
+current_version = 2
+try:
+    settings_version = settings.settings_version
+except AttributeError:
+    print("--------------------------------------")
+    print("The settings.py file is the first version, you have to update it!")
+    print("Current version: " + str(current_version))
+    print("--------------------------------------")
+    quit()
+
+if current_version != settings_version:
+    print("--------------------------------------")
+    print("You need to update the settings.py file!")
+    print("Settings version: " + str(settings_version))
+    print("New version: " + str(current_version))
+    print("--------------------------------------")
+    quit()
+
 if settings.token == '':
     print("--------------------------------------")
     print("Insert your BotFather token in settings.py!")

@@ -6,3 +6,6 @@ softwares = ["notepad"]
 
 path_test = "test.txt"
 path_notepad = "C:\\Windows\\System32\\notepad.exe"
+
+# DO NOT EDIT
+settings_version = 2
