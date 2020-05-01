@@ -1,4 +1,5 @@
 @echo off
 title Telegram Remote Launcher
-python bot.py
+cd bot
+python -b bot.py
 pause

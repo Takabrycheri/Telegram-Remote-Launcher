@@ -1,0 +1,17 @@
+{
+    "config_version": 3,
+    
+    "bot_settings":{
+        "token": "",
+        "user_id": ""
+    },
+    
+    "paths":{
+        "files": {
+            "test": "../test.text"
+        },
+        "softwares": {
+            "notepad": "C:\\Windows\\System32\\notepad.exe"
+        }
+    }
+}
