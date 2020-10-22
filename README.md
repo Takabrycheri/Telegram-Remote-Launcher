@@ -1,3 +1,6 @@
+# Repo no longer supported
+[Click here to go to the new repo!](https://github.com/Takabrycheri34/Remote-Launcher)
+
 # Telegram Remote Launcher
 This bot allows you to start any software or file on your computer (and more soon), of course, just leave the script turned on on your PC!
 
